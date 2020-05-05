@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inline Datepicker Example</title>
+    <!-- [1 - LOAD THE LIBRARIES] -->
+    <link href="style.css" rel="stylesheet">
+    <script src="datepicker.js"></script>
+    <style>
+      html, body { font-family: arial; }
+    </style>
+  </head>
+  <body>
+    <h1>Inline Date Picker</h1>
+    <!-- [2 - DEFINE YOUR TEXT INPUT + CONTAINER] -->
+    <input type="text" id="input-inline"/>
+    <br><br>
+    <div id="pick-inline"></div>
+
+    <!-- [3 - ATTACH DATE PICKER ON LOAD] -->
+    <script>
+      window.addEventListener("load", function(){
+        // container + target input
+        picker.attach("pick-inline", "input-inline");
+      });
+    </script>
+  </body>
+</html>
