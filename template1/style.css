@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+
+    font-family: 'Montserrat', sans-serif
+}
+header {
+display: flex;
+justify-content: space-around;
+color: white;
+background: radial-gradient(rgba(43,55,96,1),rgba(11,16,35,1));
+align-items: center;
+height: 70px;
+}
+.logo{
+
+    align-self: center;
+    letter-spacing: 3px;
+    font-size: x-large;
+
+}
+nav{
+    display: flex;
+}
+ nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 40em;
+    align-self: center ;
+}
+
+nav ul a{
+
+    text-decoration: none;
+    color: white;
+}
+nav .burger div{
+
+width: 25px;
+height: 3px;
+background-color: white;
+margin: 5px;
+
+}
