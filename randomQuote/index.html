@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quote</title>
+</head>
+<body>
+
+    <div class="template">
+        <h2>start your day with positive quotes</h2>
+        <div class="box">
+            <p id="quote">Click below button to generate quate</p>
+        </div>
+        <button onclick="myquote()">Click</button>
+            
+    </div>   
+    
+    
+    <script>
+         
+        function myquote() {
+            var quote=["Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, alias."
+                    ,"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ipsam at numquam error sunt. Aliquid ducimus molestiae vitae nesciunt nihil, fuga similique quo totam inventore rem nam. Hic, ad quo!"
+                    ,"sit, amet consectetur adipisicing elit. rem nam. Hic, ad quo!"
+                    ,"amete jo lam dhinchak","Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nobis laborum voluptatibus dolor reprehenderit alias facere id quasi nesciunt non possimus quo vel nisi, odit corrupti, est aliquid dolorem eveniet ratione voluptas fugit blanditiis consequatur! Consectetur repellendus recusandae doloremque dolorum! Voluptas possimus numquam laborum blanditiis a facilis, est recusandae explicabo."]  
+            var rand=quote[Math.floor(Math.random()*quote.length)];  
+            document.getElementById("quote").innerHTML=rand;
+        }         
+    </script>
+</body>
+</html>
