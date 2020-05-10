@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+</head>
+<body>
+    <p>Click Below button to Change the background Color</p>
+    <button  onclick="chgcolor()">Click me</button>
+    <script>
+        
+        
+        function chgcolor(Color){
+           
+            var Color=["red","blue","green","yellow"];
+            var rand=Color[Math.floor(Math.random()*Color.length)];
+            document.body.style.backgroundColor = rand;
+        }
+    </script>
+</body>
+</html>
